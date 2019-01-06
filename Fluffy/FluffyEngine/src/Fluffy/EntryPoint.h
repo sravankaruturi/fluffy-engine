@@ -1,13 +1,15 @@
 ﻿#pragma once
 #include "Application.h"
-#include <cstdio>
 
 extern Fluffy::Application * Fluffy::CreateApplication();
 
-int main(int argc, char ** argv)
+int main(int _argc, char ** _argv)
 {
 
-	printf("Fluffy Engine Initialized");
+	Fluffy::Log::Init();
+
+	F_CORE_TRACE("Logger Initialized");
+	F_APP_TRACE("Logger Initialized");
 
 	auto app = Fluffy::CreateApplication();
 
