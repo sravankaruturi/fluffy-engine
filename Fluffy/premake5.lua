@@ -17,12 +17,16 @@ project "FluffyEngine"
 	targetdir	("bin/" .. outputdir .. "/%{prj.name}")
 	objdir		("bin-int/" .. outputdir .. "/%{prj.name}")
 
+	pchheader "fpch.h"
+	pchsource "FluffyEngine/src/fpch.cpp"
+
 	files{
 		"%{prj.name}/src/**.h",
 		"%{prj.name}/src/**.cpp"
 	}
 
 	includedirs{
+		"%{prj.name}/src/",
 		"%{prj.name}/vendor/spdlog/include/"
 	}
 

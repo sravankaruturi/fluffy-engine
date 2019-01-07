@@ -4,6 +4,9 @@
     <Filter Include="Fluffy">
       <UniqueIdentifier>{115F0CB3-FD00-3789-E6BB-4ADDD2FCBDD9}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Fluffy\Events">
+      <UniqueIdentifier>{D54D6037-410E-DC6D-0A49-25EB76C8204A}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Fluffy.h" />
@@ -16,19 +19,30 @@
     <ClInclude Include="src\Fluffy\EntryPoint.h">
       <Filter>Fluffy</Filter>
     </ClInclude>
+    <ClInclude Include="src\Fluffy\Events\ApllicationEvent.h">
+      <Filter>Fluffy\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Fluffy\Events\Event.h">
+      <Filter>Fluffy\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Fluffy\Events\KeyEvent.h">
+      <Filter>Fluffy\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Fluffy\Events\MouseEvent.h">
+      <Filter>Fluffy\Events</Filter>
+    </ClInclude>
     <ClInclude Include="src\Fluffy\Log.h">
       <Filter>Fluffy</Filter>
     </ClInclude>
+    <ClInclude Include="src\fpch.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Fluffy\Application.cpp">
       <Filter>Fluffy</Filter>
     </ClCompile>
-    <ClCompile Include="src\Fluffy\Core.cpp">
-      <Filter>Fluffy</Filter>
-    </ClCompile>
     <ClCompile Include="src\Fluffy\Log.cpp">
       <Filter>Fluffy</Filter>
     </ClCompile>
+    <ClCompile Include="src\fpch.cpp" />
   </ItemGroup>
 </Project>
